@@ -7,13 +7,15 @@ import { CardIndicationComponent } from './components/cards/card-indication/card
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CardPersonDetailComponent } from './components/cards/card-person-detail/card-person-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardGeographyComponent } from './components/cards/card-geography/card-geography.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardIndicationComponent,
     DashboardComponent,
-    CardPersonDetailComponent
+    CardPersonDetailComponent,
+    CardGeographyComponent
   ],
   imports: [
     BrowserModule,

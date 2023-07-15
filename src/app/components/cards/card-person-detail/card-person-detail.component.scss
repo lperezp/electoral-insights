@@ -6,6 +6,8 @@
     user-select: none;
     background-color: white;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 
     &__subtitle {
         font-weight: 500;
@@ -19,5 +21,21 @@
         font-size: 24px;
         color: #232323;
         margin: 0 0 32px 0;
+    }
+
+    .box {
+        width: calc(100% - 160px);
+    }
+
+    .photo {
+        width: 160px;
+        border-radius: 100%;
+        background-size: cover;
+        height: 160px;
+    }
+
+    .description {
+        margin-top: 20px;
+        width: 100%;
     }
 }

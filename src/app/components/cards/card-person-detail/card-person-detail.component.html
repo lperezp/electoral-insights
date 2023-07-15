@@ -1,9 +1,13 @@
 <div class="container">
-    <p class="container__subtitle">PERSONAJE POLÍTICO</p>
-    <h2 class="container__title">{{person.name}}</h2>
+    <div class="box">
+        <p class="container__subtitle">PERSONAJE POLÍTICO</p>
+        <h2 class="container__title">{{person.name}}</h2>
+    </div>
+    <div class="photo" [ngStyle]="{'background-image': 'url(' + person.photo +')'}">
+
+    </div>
     <p class="description">
         {{person.description}}
     </p>
-    <img [src]="person.photo" alt="">
 
 </div>

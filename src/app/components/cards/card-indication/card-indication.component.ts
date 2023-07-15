@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-indication',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-indication.component.scss']
 })
 export class CardIndicationComponent {
-
+  @Input() title = '';
+  @Input() data = [
+    {
+      positive: 10,
+      negative: 20,
+      neutro: 30
+    },
+  ];
 }
